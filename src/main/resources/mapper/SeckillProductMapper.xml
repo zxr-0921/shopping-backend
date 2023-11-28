@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="seig.qlj.shopping.mapper.SeckillProductMapper">
+
+    <resultMap id="BaseResultMap" type="seig.qlj.shopping.pojo.SeckillProduct">
+            <id property="seckill_id" column="seckill_id" jdbcType="INTEGER"/>
+            <result property="product_id" column="product_id" jdbcType="INTEGER"/>
+            <result property="seckill_price" column="seckill_price" jdbcType="DOUBLE"/>
+            <result property="seckill_stock" column="seckill_stock" jdbcType="INTEGER"/>
+            <result property="time_id" column="time_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        seckill_id,product_id,seckill_price,
+        seckill_stock,time_id
+    </sql>
+</mapper>

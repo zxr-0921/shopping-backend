@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="seig.qlj.shopping.mapper.OrderMapper">
+
+    <resultMap id="BaseResultMap" type="seig.qlj.shopping.pojo.Order">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="order_id" column="order_id" jdbcType="VARCHAR"/>
+            <result property="user_id" column="user_id" jdbcType="INTEGER"/>
+            <result property="product_id" column="product_id" jdbcType="INTEGER"/>
+            <result property="product_num" column="product_num" jdbcType="INTEGER"/>
+            <result property="product_price" column="product_price" jdbcType="DOUBLE"/>
+            <result property="order_time" column="order_time" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,order_id,user_id,
+        product_id,product_num,product_price,
+        order_time
+    </sql>
+</mapper>

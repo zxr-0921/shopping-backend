@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="seig.qlj.shopping.mapper.CarouselMapper">
+
+    <resultMap id="BaseResultMap" type="seig.qlj.shopping.pojo.Carousel">
+            <id property="carousel_id" column="carousel_id" jdbcType="INTEGER"/>
+            <result property="img_path" column="img_path" jdbcType="CHAR"/>
+            <result property="describes" column="describes" jdbcType="CHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        carousel_id,img_path,describes
+    </sql>
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="seig.qlj.shopping.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="seig.qlj.shopping.pojo.User">
+            <id property="user_id" column="user_id" jdbcType="INTEGER"/>
+            <result property="username" column="username" jdbcType="CHAR"/>
+            <result property="password" column="password" jdbcType="CHAR"/>
+            <result property="user_phone_number" column="user_phone_number" jdbcType="CHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,username,password,
+        user_phone_number
+    </sql>
+</mapper>

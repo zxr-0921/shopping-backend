@@ -101,7 +101,6 @@ public class UserController {
      * @param token
      * @return
      */
-    // TODO: 2023/11/26 根据token获取用户信息报错
     @GetMapping("/token")
     @ApiOperation(value = "根据token获取用户信息")
     public ResultMessage token(@CookieValue("XM_TOKEN") String token, HttpServletRequest request, HttpServletResponse response) throws Exception {
